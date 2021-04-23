@@ -1,0 +1,171 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           polysemy-telegram-bot-api
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/luvemil/polysemy-telegram-bot-api#readme>
+homepage:       https://github.com/luvemil/polysemy-telegram-bot-api#readme
+bug-reports:    https://github.com/luvemil/polysemy-telegram-bot-api/issues
+author:         Marco Tarantino
+maintainer:     taran.marco@protonmail.com
+copyright:      2021 Marco Tarantino
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/luvemil/polysemy-telegram-bot-api
+
+library
+  exposed-modules:
+      Telegram.Bot
+      Telegram.Bot.Calls
+      Telegram.Bot.Endpoints
+  other-modules:
+      Paths_polysemy_telegram_bot_api
+  hs-source-dirs:
+      src
+  default-extensions:
+      BangPatterns
+      ConstraintKinds
+      DataKinds
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      FlexibleContexts
+      FlexibleInstances
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      OverloadedStrings
+      OverloadedLabels
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      TypeApplications
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Widentities -Wredundant-constraints -fhide-source-paths -Wpartial-fields -fplugin=Polysemy.Plugin
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , generic-lens
+    , lens
+    , polysemy
+    , polysemy-plugin
+    , text
+    , time
+    , tomland
+    , wreq
+  default-language: Haskell2010
+
+executable polysemy-telegram-bot-api-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_polysemy_telegram_bot_api
+  hs-source-dirs:
+      app
+  default-extensions:
+      BangPatterns
+      ConstraintKinds
+      DataKinds
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      FlexibleContexts
+      FlexibleInstances
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      OverloadedStrings
+      OverloadedLabels
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      TypeApplications
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Widentities -Wredundant-constraints -fhide-source-paths -Wpartial-fields -fplugin=Polysemy.Plugin -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , generic-lens
+    , lens
+    , polysemy
+    , polysemy-plugin
+    , polysemy-telegram-bot-api
+    , text
+    , time
+    , tomland
+    , wreq
+  default-language: Haskell2010
+
+test-suite polysemy-telegram-bot-api-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_polysemy_telegram_bot_api
+  hs-source-dirs:
+      test
+  default-extensions:
+      BangPatterns
+      ConstraintKinds
+      DataKinds
+      DeriveGeneric
+      DerivingStrategies
+      DerivingVia
+      FlexibleContexts
+      FlexibleInstances
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      OverloadedStrings
+      OverloadedLabels
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      TypeApplications
+      TypeFamilies
+      TypeOperators
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Widentities -Wredundant-constraints -fhide-source-paths -Wpartial-fields -fplugin=Polysemy.Plugin -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , generic-lens
+    , lens
+    , polysemy
+    , polysemy-plugin
+    , polysemy-telegram-bot-api
+    , text
+    , time
+    , tomland
+    , wreq
+  default-language: Haskell2010
