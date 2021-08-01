@@ -1,6 +1,6 @@
 {-# LANGUAGE TemplateHaskell #-}
 
-module Telegra.Effects.Bot where
+module Telegram.Effects.Bot where
 
 import Data.Generics.Labels ()
 import Data.Generics.Product ()
