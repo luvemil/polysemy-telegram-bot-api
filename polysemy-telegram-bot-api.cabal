@@ -28,6 +28,7 @@ library
       Telegram.Bot
       Telegram.Bot.Calls
       Telegram.Bot.Endpoints
+      Telegram.Effects.Bot
   other-modules:
       Paths_polysemy_telegram_bot_api
   hs-source-dirs:
